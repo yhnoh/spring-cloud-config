@@ -1,0 +1,21 @@
+## 일반적으로 스프링 클라우드 Config 서버의 정보를 담고 있다. ex) 이름, 위치, 암호화/복호화 정보
+## application.yml 파일보다 먼저 실행된다.
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+server:
+  port: 8888
+spring:
+  application:
+    name: config-service
+  ## native는 클라우드 컨피그 서버용으로만 생성한 프로파일이며, 구성 파일을 클래스 패스나 파일 시스템에서 검색하고 읽도록 지사하는 프로파일
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config

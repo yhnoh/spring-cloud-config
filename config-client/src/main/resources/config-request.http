@@ -1,0 +1,12 @@
+// ./gradlew bootRun --args='--spring.profiles.active={profile}'
+
+GET localhost:8080/environment
+
+### dev
+GET localhost:8081/environment
+
+### local
+GET localhost:8082/environment
+
+### prod
+GET localhost:8083/environment

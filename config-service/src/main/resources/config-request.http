@@ -1,0 +1,10 @@
+GET localhost:8888/environment/defalut
+
+###
+GET localhost:8888/environment/dev
+
+###
+GET localhost:8888/environment/local
+
+###
+GET localhost:8888/environment/prod
