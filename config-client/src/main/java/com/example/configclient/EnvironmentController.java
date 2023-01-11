@@ -13,6 +13,6 @@ public class EnvironmentController {
     @GetMapping("/environment")
     public String environment(){
 
-        return environment.getProperty("environment");
+        return environment.getProperty("active");
     }
 }

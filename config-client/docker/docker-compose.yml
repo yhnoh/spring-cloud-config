@@ -1,0 +1,15 @@
+version: '3'
+services:
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+#    volumes:
+#      - ./rabbitmq/etc/:/etc/rabbitmq/
+#      - ./rabbitmq/data/:/var/lib/rabbitmq/
+#      - ./rabbitmq/logs/:/var/log/rabbitmq/
+    container_name: rabbitmq_container
+    ports:
+      - "5672:5672"       # RabbitMQ의 기본 서버 포트
+      - "15672:15672"     # 실제 UI를 이용해 관리 가능한 포트
+    environment:
+      RABBITMQ_DEFAULT_USER: "admin"
+      RABBITMQ_DEFAULT_PASS: "1234"

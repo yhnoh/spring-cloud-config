@@ -1,12 +1,9 @@
 // ./gradlew bootRun --args='--spring.profiles.active={profile}'
 
-GET localhost:8080/environment
+GET localhost:{{port}}/environment
 
-### dev
-GET localhost:8081/environment
+### 어플리키이션을 종료시키지 않고 설정 정보 하나 refresh
+POST localhost:{{port}}/actuator/refresh
 
-### local
-GET localhost:8082/environment
-
-### prod
-GET localhost:8083/environment
+### 어플리키이션을 종료시키지 않고 연결되어 있는 설정정보 전체 변경 refresh
+POST localhost:{{port}}/actuator/busrefresh
