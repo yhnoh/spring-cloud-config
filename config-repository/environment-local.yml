@@ -1,4 +1,5 @@
 active: local
+user:
   name: local
   ## password: 56
   password: "{chiper}8e914ff722a8f4ad03f1df2021c4e0d2f976e2edd2129a5a21168719a5ed2922"

@@ -1,4 +1,5 @@
 active: dev
+user:
   name: dev
   ## password: 78
   password: "{chiper}c93a18bfd41a87afdfffdfccc3528a0ab874b5ad89104e08ba06e5d1731f8666"
