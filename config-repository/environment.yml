@@ -2,4 +2,4 @@ active: default
 user:
   name: default
   ## password: 12
-  password: "{cipher}b4b85a5674e92bf5590596626fb546f842b64e6ba64630a5ca5de293d38e2a5f"
+  password: "{cipher}fecec1353c2691f0ca05901666a8572d2122ff39e0139f535ee317b0e1d728e4"
