@@ -1,10 +1,14 @@
-GET localhost:8888/environment/defalut
+GET http://localhost:8888/environment/{{profile}}
 
 ###
-GET localhost:8888/environment/dev
+POST http://localhost:8888/encrypt
+Content-Type: application/json
+
+"{{passowrd}}"
+
 
 ###
-GET localhost:8888/environment/local
+POST http://localhost:8888/decrypt
+Content-Type: application/json
 
-###
-GET localhost:8888/environment/prod
+"{chiper}1a9d3fee6b2780839bd1dc7d1c332daf0576dd08b057defad271e9ecd163f1a3"

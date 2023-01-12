@@ -13,5 +13,10 @@ spring:
       server:
         git:
           uri: https://github.com/yhnoh/spring-cloud-config.git
-          default-label: feature/git
+          default-label: security/encryption-decryption
           search-paths: config-repository
+
+
+### 중요 정보
+encrypt:
+  key: my_key
