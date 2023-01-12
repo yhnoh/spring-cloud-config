@@ -1,1 +1,5 @@
-active: default2
+active: default
+user:
+  name: default
+  ## password: 12
+  password: 12
